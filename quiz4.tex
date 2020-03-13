@@ -1,0 +1,101 @@
+\documentclass[12pt, addpoints]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Quiz - 28 February 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+\vspace{10mm}
+ 
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+\begin{itemize}
+\item
+$X \sim \text{bernoulli}(p)$ means $P(X = 1) = p$ and $P(X = 0) = 1 - p$.
+
+\item 
+For $X \sim \text{bernoulli}(p)$, the variance is $\sigma^2_X = p(1-p)$.
+
+\item 
+Let $Y = cX$ for a constant number $c$ and random variable $X$. Then $\sigma^2_Y = c^2 \sigma^2_X$.
+\end{itemize}
+
+A certain brand of dinnerware set comes in three colors: red, white, and blue. 
+%\begin{itemize}
+
+%\item
+25\% of customers order the red set, 41\% order the white, and 34\% order the blue.
+
+%\item
+Let $X = 1$ if a randomly chosen order is for a red set, let $X = 0$ otherwise.
+
+%\item
+Let $Y = 1$ if the order is for a white set, let $Y = 0$ otherwise.
+
+%\item
+Let $Z = X + Y$.
+
+%\item
+Let $W = -2X$.
+%\end{itemize}
+
+\begin{questions}
+
+\question[4]
+Write down the distributions of $Y$ and $Z$.
+For example, $X \sim \text{bernoulli}(0.25)$.
+
+\begin{solution} 
+$Y \sim \text{bernoulli}(0.41)$.
+
+$Z = 1$ if order is for white or red, and 0 otherwise.
+The probability the order is white or red is 0.25 + 0.41 = 0.66, so $Z \sim \text{bernoulli}(0.66)$.
+\end{solution}
+\vspace{\stretch{2}}
+
+\question[2]
+Is $W$ a bernoulli random variable? Why?
+
+\begin{solution} 
+No, $W$ takes on values other than 0 or 1 with positive probability.
+\end{solution}
+\vspace{\stretch{1}}
+
+
+\question[4]
+Calculate the variance $\sigma^2_W$.
+
+\begin{solution} 
+Applying the formulas above, $\sigma^2_X = 0.25(1 - 0.25) = 3/16$.
+$W = -2X$, so 
+\[
+\sigma^2_W = (-2)^2 \sigma^2_X = (4)(3/16) = 3/4 = 0.75
+\]
+\end{solution}
+\vspace{\stretch{2}}
+
+
+\vspace{\stretch{1}}
+\end{questions}
+
+\newpage
+\begin{center}
+\gradetable[v][questions]
+\end{center}
+
+\end{document}

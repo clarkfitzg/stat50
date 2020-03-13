@@ -1,0 +1,110 @@
+\documentclass[12pt, addpoints]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Quiz - 14 February 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+\vspace{10mm}
+ 
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+Please show your work. Here are some relevant formulas:
+
+\begin{itemize}
+\item
+Definition of conditional probability:
+$P(A | B) = \frac{P(A \cap B)}{P(B)}$
+
+\item
+Probability of event not happening:
+$P(A^C) = 1 - P(A)$
+
+\item
+For $A,B$ independent events,
+$P(A \cap B) = P(A) P(B)$.
+\end{itemize}
+
+\begin{questions}
+
+\question[3]
+
+\emph{from homework}
+
+Items are inspected for flaws by two quality inspectors.
+If a flaw is present, it will be detected by the first inspector with probability 0.91, and by the second inspector with probability 0.7.
+Assume the inspectors function independently.
+
+If an item has a flaw, what is the probability that it will be found by both inspectors?
+
+\begin{solution} 
+
+Let A denote the event that the flaw is found by the first inspector, and let B denote the event that the flaw is found by the second inspector.
+
+\[
+P(A \cap B) = P(A)P(B) = (0.91)(0.7) = 0.637
+\]
+
+\end{solution}
+\vspace{\stretch{1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\question 
+
+Jack plans to purchase roses from the flower stand or the supermarket for his significant other on Valentine's Day, if they're not sold out.
+The probability that the flower stand is out of roses is 0.15.
+The probability that the flower stand and the supermarket are both out roses is 0.1.
+
+\begin{parts}
+
+\part[4]
+What's the probability that the supermarket is out of roses, given that the flower stand is out of roses?
+
+\begin{solution} 
+Let $F$ be the event the flower stand is out of roses, and $S$ be the event that the supermarket is out of roses.
+
+\[
+P(S | F) = \frac{P(S \cap F)}{P(F)} = \frac{0.1}{0.15} = \frac{2}{3}
+\]
+\end{solution}
+\vspace{\stretch{1}}
+
+\part[3]
+
+What's the probability that Jack is able to purchase roses?
+
+\begin{solution} 
+He can purchase roses only if both stores are not out roses.
+
+Formally, $P( (S \cap F)^C ) = 1 - P(S \cap F) = 1 - 0.1 = 0.9$
+
+\end{solution}
+\vspace{\stretch{1}}
+
+
+\end{parts}
+
+\end{questions}
+
+\newpage
+\begin{center}
+\gradetable[v][questions]
+\end{center}
+
+\end{document}

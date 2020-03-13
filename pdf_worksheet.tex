@@ -1,0 +1,108 @@
+\documentclass[12pt]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Worksheet - 3 Mar 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+Let $X$ be a a continuous R.V. with Probability Density Function (PDF) $f(x)$.
+
+\begin{itemize}
+
+\item
+The mean of $X$ is:
+\[
+\mu_X = \int_{-\infty}^{\infty} x f(x) dx
+\]
+
+\item
+The Cumulative Distribution Function (CDF) for $X$ is:
+\[
+F(x) = P(X \leq x) = \int_{-\infty}^x f(t) dt
+\]
+
+\end{itemize}
+
+\begin{questions}
+
+\question
+Answer these in the form $a \leq x \leq b$, for appropriate $a, b$, possibly $\infty$.
+
+\begin{parts}
+\part
+What are the possible values for a random variable $X$?
+
+
+\part
+What are the possible values for a PDF $f(x)$?
+
+
+\part
+What are the possible values for a CDF $F(x)$?
+
+
+\end{parts}
+
+
+\question
+Let $X \sim \text{Uniform}(0, 1)$.
+
+Write down and sketch the CDF $F(x)$ for $X$.
+
+\question
+Let $X_1 \sim \text{Uniform}(0, 1)$ and $X_2 \sim \text{Uniform}(0, 1)$ be two independent random variables.
+
+Let $Y = X_1 + X_2$.
+In class we saw that $Y$ has a PDF shaped like a triangle with vertices at (0,0), (1, 1), (2, 0).
+
+\begin{parts}
+\part
+Write down and sketch the PDF $f(y)$ for $Y$.
+
+\part
+Write down and sketch the CDF $F(y)$ for $Y$.
+
+\part
+Show that $\mu_Y = 1$.
+\end{parts}
+
+\question
+Is it possible to have a R.V. that is neither continuous or discrete?
+If so, provide an example of a process that might generate such data.
+What would the CDF of such a R.V. look like?
+
+\question
+Let $Z \sim \text{Uniform}(a, b)$, meaning that $Z$ is equally likely to take on any value between $a$ and $b$.
+Note $a < b$.
+
+\begin{parts}
+\part
+Write down the PDF $f(z)$ for $Z$.
+
+
+\part
+Write $Z$ as a function of $X$, where $X \sim \text{Uniform}(0, 1)$.
+
+
+\end{parts}
+
+
+\end{questions}
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[12pt, addpoints]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Quiz - 7 February 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+\vspace{10mm}
+ 
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+Please show your work. Here are some relevant formulas:
+
+\[
+n! = n (n-1) (n-2)... (3)(2)(1)
+\qquad \qquad
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+
+\begin{questions}
+
+\question[5]
+
+\emph{from homework}
+
+8 new graduates are hired by an engineering firm.
+Each is assigned at random to one of eight cubicles arranged in a row in the back of the room that houses the engineering staff.
+2 of the graduates are Bill and Cathy.
+What is the probability that they are assigned adjacent cubicles?
+
+\begin{solution} 
+The total number of pairs of cubicles is $\binom{8}{2} = \frac{8!}{6! 2!} = \frac{8 \cdot 7}{2} = 28$.
+Each is equally likely to be chosen.
+Of these pairs, seven are adjacent.
+Therefore, the probability that an adjacent pair of cubicles is selected is $\frac{7}{28} = 0.25$.
+\end{solution}
+\vspace{\stretch{2}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\question 
+
+A bicycle rental shop has 4 bikes, all different colors.
+4 friends visit and rent the bikes.
+
+\begin{parts}
+
+\part[3]
+How many ways are there to assign bikes to the friends?
+
+\begin{solution} 
+Line the bikes up in order.
+There are $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$ ways to line the friends up with the bikes, and this is all possible assignments.
+\end{solution}
+\vspace{\stretch{1}}
+
+\part[2]
+
+What's the probability that a particular friend, Anna, is assigned the green bike?
+Assume all assignments are equally likely.
+
+\begin{solution} 
+If we assign Anna to the green bike, there are now three friends and three bikes.
+As above, there are $3! = 3 \cdot 2 \cdot 1 = 6$ ways to assign the friends to bikes.
+The probability Anna rides the green bike is $\frac{6}{24} = 0.25$.
+
+More intuitively, Anna is equally likely to be assigned any of the four bikes, so the probability is $\frac{1}{4}$.
+\end{solution}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+\end{questions}
+
+\newpage
+\begin{center}
+\gradetable[v][questions]
+\end{center}
+
+\end{document}

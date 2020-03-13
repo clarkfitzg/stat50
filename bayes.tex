@@ -1,0 +1,104 @@
+\documentclass[12pt]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Worksheet - 18 Feb 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+\begin{itemize}
+
+\item
+Law of Total Probability
+\[
+P(A) = P(A \cap B) + P(A \cap B^C) = P(A | B) P(B) + P(A | B^C) P(B^C)
+\]
+
+\item
+Bayes Rule
+\[
+P(B | A) = \frac{P(A | B) P(B)}{P(A)}
+\]
+
+\end{itemize}
+
+\begin{questions}
+
+\question
+Chef Joe makes delicious i.i.d. pancakes that vary slightly in heights.
+The mean pancake height is 0.5 inch, and the standard deviation is 0.1 inch.
+He serves them on i.i.d. plates that stand, on average, 0.3 inches off the top of the table, with standard deviation 0.02 inches.
+
+\begin{parts}
+\part
+What is the mean height above the table for a stack of 5 pancakes?
+
+\vfill
+\part
+What is the standard deviation of the height above the table for a stack of 5 pancakes?
+
+\vfill
+\part
+Joe calculates the average height of 9 pancakes.
+What is the mean and standard deviation of the average height?
+
+\end{parts}
+\vfill
+\newpage
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Students are taking a multiple choice exam.
+About 60\% of the students know the material well.
+If the student knows the material well, then the probability that they answer correctly is 0.9.
+If they don't know the material well, then the probability that they answer correctly is 0.4.
+
+\begin{parts}
+\part
+If a student answers one question correctly, what's the probability that they know the material well?
+
+\vfill
+\part
+If a student answers 2 of 3 questions correctly, what's the probability that they know the material well?
+
+\vfill
+\part
+If a student answers 2 of 3 questions correctly, what's the probability that they do not know the material well?
+
+\vfill
+\part
+Based on these numbers, how effective is a 3 question multiple choice exam in measuring individual student performance?
+
+
+\vfill
+\part
+Let $n$ be the number of questions on the exam.
+If a student answers $c$ questions correctly, what's the probability that the student knows the material well?
+
+\vfill
+\part
+How many questions need to be on an exam such that if a student answers all correctly, the probability that they know the material well is at least 0.99?
+
+
+\end{parts}
+
+\vfill
+
+\end{questions}
+\end{document}

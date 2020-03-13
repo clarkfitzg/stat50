@@ -1,0 +1,76 @@
+\documentclass[12pt, addpoints]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Quiz - 6 March 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+\vspace{10mm}
+ 
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+Let $X$ be a continuous random variable with probability density function (PDF) $f(x)$.
+
+\begin{itemize}
+
+\item
+The probability $X$ is between numbers $a$ and $b$ is:
+\[
+P(a < X < b) = \int_a^b f(x) dx
+\]
+
+\item
+The mean of $X$ is:
+\[
+\mu_X = \int_{-\infty}^{\infty} x f(x) dx
+\]
+
+\end{itemize}
+
+\vspace{5mm}
+
+Suppose $X$ has the following probability density function:
+\[
+f(x) = 
+\begin{cases} 
+0           &\mbox{if } x < -1 \\
+x/4 + 1/2   &\mbox{if } -1 \leq x \leq 1 \\
+0           & \mbox{if } 1 < x \end{cases}
+\]
+
+\begin{questions}
+
+\question[3]
+Sketch the PDF $f(x)$ for $X$.
+
+\vspace{\stretch{1}}
+\question[3]
+Calculate $P(-1 < X < 0)$.
+
+\vspace{\stretch{1}}
+\question[4]
+Calculate $\mu_X$.
+
+\vspace{\stretch{1}}
+\end{questions}
+\newpage
+\begin{center}
+\gradetable[v][questions]
+\end{center}
+
+\end{document}

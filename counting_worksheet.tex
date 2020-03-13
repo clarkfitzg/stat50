@@ -1,0 +1,162 @@
+\documentclass[12pt]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Counting, Permutations, and Combinations}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+\[
+n! = n (n-1) (n-2)... (3)(2)(1)
+\qquad \qquad
+\binom{n}{k} = \frac{n!}{k!(n-k)!}
+\]
+\vspace{2mm}
+
+\begin{questions}
+
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+A group of 5 students are flying from Sacramento to New York for a programming competition.
+Each can choose to take one of 6 different flights.
+
+\begin{parts}
+\part
+How many ways can the students travel on the flights?
+
+\vfill
+\part
+How many ways can the students all be on the same flight?
+
+\vfill
+\part
+If each student randomly chooses a flight, what's the probability they are all on the same flight?
+
+\vfill
+\part
+The students decide to all take the same flight, and they're all waiting in line together for security.
+How many ways can they line up?
+
+\end{parts}
+\vfill
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+You're packing your luggage for the flight.
+
+\begin{parts}
+\part
+You have 12 different shirts, and you want to bring 3.
+How many different collections of shirts can you bring?
+
+\vfill
+\part
+You have 8 different pants, and you want to again bring 3.
+How many different collections of pants can you bring?
+
+\vfill
+\part
+How many different collections of shirts and pants can you bring?
+\end{parts}
+
+\vfill
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+There are 4 different keys, and 4 matching locks.
+The problem is, you don't know which key goes into which lock.
+
+\begin{parts}
+\part
+How many ways could the keys match the locks?
+
+\vfill
+\part
+You start trying to unlock the locks, and you keep trying until you find a matching lock.
+What's the minimum number of times you need to try?
+
+\vfill
+\part
+What's the probability that you try the minimum number of times?
+
+\vfill
+\part
+What's the maximum number of times you need to try?
+
+\vfill
+\part
+What's the probability that you try the maximum number of times?
+
+\end{parts}
+\vfill
+\newpage
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Recall that a standard deck of playing cards has 13 cards with 4 suits for 52 total cards.
+
+In the popular poker game Texas hold'em, all players share 5 community cards laying face up on the table, and hold 2 cards privately in their hand.
+From this collection of 7 cards, each player tries to form the best 5 card hand.
+
+\begin{parts}
+\part
+How many ways are there to make a 5 card hand from the 7 cards?
+
+\vfill
+\part
+How many hands are possible in Texas hold'em, if we consider both the community cards and the private cards?
+
+
+\vfill
+\end{parts}
+\question
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In Texas hold'em, bets happen after each of the following steps:
+\begin{enumerate}
+\item Each player receives their two private cards.
+\item 3 community common cards are laid down (the flop).
+\item Another community common card is laid down (the turn).
+\item The final community common card (the river).
+\end{enumerate}
+
+\begin{parts}
+\part
+How many ways are there for the 5 community cards to be dealt?
+
+\vfill
+\part
+The 4th community card is laid down, and all 4 cards are hearts.
+You hold a 2 of hearts and a jack of diamonds in your hand, so you have the lowest possible flush.
+
+\vfill
+\part
+What's the probability that the river card is a heart?
+
+\vfill
+\part
+The river card is a spade.
+You're betting against one other player.
+What's the probability they hold a heart?
+(Meaning they will win with a higher flush than yours)
+
+\vfill
+\part
+Change the previous question, so that instead of 1 player, you're betting against 4 players.
+What's the probability another player will beat you with a higher flush?
+
+\vfill
+\end{parts}
+\end{questions}
+\end{document}

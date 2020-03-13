@@ -1,0 +1,109 @@
+\documentclass[12pt]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{amsmath}
+% \binom{n}{k}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Poisson Worksheet Version 1.1}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+\begin{itemize}
+
+\item
+The Probability Mass Function (PMF) for $X \sim \text{Poisson}(\lambda)$ is
+\[
+f(k) = e^{-\lambda} \frac{\lambda^k}{k!}
+\]
+
+\end{itemize}
+
+\begin{questions}
+
+\question
+Which of the following data generating processes could be modeled with a Poisson distribution?
+Why?
+
+\begin{parts}
+\part
+The count of individuals infected with COVID-19 arriving during a particular minute at SMF airport security checkpoint to board a plane.
+
+\vspace{\stretch{1}}
+\part
+The count of individuals infected with COVID-19 arriving at SMF in a particular minute on a plane.
+\vspace{\stretch{1}}
+\part
+The number of fleas on a dog.
+\vspace{\stretch{1}}
+\part
+The number of lottery winners.
+\vspace{\stretch{1}}
+\part
+The length of a part in manufacturing.
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+Suppose that in normal traffic conditions, vehicles enter the I50 on ramp at a rate of 10 vehicles per minute, with arrival times following a Poisson distribution.
+\begin{parts}
+\part
+What's the probability that exactly 10 vehicles enter the onramp in a given minute?
+\vspace{\stretch{1}}
+\part
+What's the largest value of $k$ such that the probability that $k$ or fewer cars arrive is less than 0.01?
+\vspace{\stretch{1}}
+\part
+Suppose that the vehicles on the onramp join the freeway where 1500 vehicles per hour pass on average, following a Poisson distribution, and this flow is independent of the onramp traffic.
+What's the probability that no cars are on the freeway after the on ramp for a 10 second period?
+\vspace{\stretch{1}}
+\end{parts}
+
+\newpage
+
+\question
+Let $X \sim \text{Poisson}(\lambda)$.
+
+\begin{parts}
+\part
+Let $k$ be a positive integer. Show
+\[
+    \frac{P(X = k)}{P(X = k-1)} = \frac{\lambda}{k}
+\]
+
+\vspace{\stretch{1}}
+\part
+Show
+\[
+    \mu_X = \lambda.
+\]
+
+\vspace{\stretch{1}}
+\part
+Let $Y \sim \text{Poisson}(\kappa)$, and $X, Y$ be independent.
+Show 
+\[
+    X + Y \sim \text{Poisson}(\lambda + \kappa).
+\]
+
+\vspace{\stretch{1}}
+\end{parts}
+
+
+\end{questions}
+\end{document}

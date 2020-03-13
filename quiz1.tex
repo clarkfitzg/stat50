@@ -1,0 +1,112 @@
+\documentclass[12pt, addpoints]{exam}
+
+\printanswers
+%\noprintanswers
+
+% Change margin size
+%\usepackage[margin=1in]{geometry}   
+ 
+\usepackage{graphicx}
+
+\begin{document}
+
+\textbf{Quiz - 31 January 2020}
+\hfill
+\textbf{STAT 50 - Prof. Fitzgerald}
+
+\vspace{10mm}
+ 
+\makebox[\textwidth]{Name:\enspace\hrulefill}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{5mm}
+
+Answer all questions, front and back.
+Show your work.
+
+\begin{center}
+\gradetable[v][questions]
+\end{center}
+
+\vspace{5mm}
+\begin{questions}
+
+\question[4]
+\textbf{True or False}, the method described produces a simple random sample of a population of 25 students in a particular class.
+ 
+\begin{parts}
+
+\part
+Arrange students alphabetically by last name, and then select the first 5 students.
+\begin{solution} 
+False, students with last names starting with ``A'' are more likely to be included in sample.
+\end{solution}
+\vspace{\stretch{1}}
+
+\part
+Arrange students alphabetically by last name, and then select the 5th, 10th, 15th, 20th and 25th students.
+\begin{solution} 
+False, students with last names starting with ``A'' are less likely to be included in sample.
+\end{solution}
+\vspace{\stretch{1}}
+
+\part 
+Arrange students in a random permutation, and then select the first 5 students.
+
+\emph{Hint: A random permutation means to arrange the students in a random order, such that all $25!$ permutations of students are equally likely.}
+\begin{solution} 
+True, each student is equally likely to appear among the first 5 students in a random permutation.
+\end{solution}
+\vspace{\stretch{1}}
+
+\part
+Arrange students in a random permutation, and then select the 5th, 10th, 15th, 20th and 25th students.
+\begin{solution} 
+True, each student is equally likely to appear as the 5th, 10th, 15th, 20th, and 25th student in a random permutation.
+\end{solution}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{\stretch{1}}
+\newpage
+\question Here is the histogram for the student loan data we saw in class.
+Note the bars all have widths of 20,000.
+
+\begin{center}
+\includegraphics[height=100mm]{first_student_loan_freq.pdf}
+\end{center}
+
+\begin{parts}
+
+\part[2]
+
+Approximately how many loans are between 20,000 and 60,000 dollars?
+
+\begin{solution} 
+$2,200 \pm 200$ 
+
+There are around 1,600 loans between 20,000 to 40,000 dollars, and around 600 loans between 40,000 and 60,000 dollars.
+So around $1,600 + 600 = 2,200$ loans are between 20,000 and 60,000 dollars.
+\end{solution}
+\vspace{\stretch{1}}
+
+\part[4]
+Based solely on this histogram, what are upper and lower bounds for $\min(x)$, the minimum loan amount?
+
+\emph{Write your answer in the form $a \leq \min(x) \leq b$, such that $b - a$ is as small as possible.}
+
+\begin{solution} 
+$0 \leq \min(x) \leq 20,000$
+
+The minimum value must be in the box farthest to the left.
+That box includes values from 0 to 20,000.
+\end{solution}
+\vspace{\stretch{1}}
+
+\end{parts}
+
+
+\end{questions}
+\end{document}
